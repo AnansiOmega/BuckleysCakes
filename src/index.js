@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
+import "./assets/vendor/nucleo/css/nucleo.css";
+import "./assets/vendor/font-awesome/css/font-awesome.min.css";
+import "./assets/css/argon-design-system-react.css";
+
 
 ReactDOM.render(
+  <Router>
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </Router>,
   document.getElementById('root')
 );
 

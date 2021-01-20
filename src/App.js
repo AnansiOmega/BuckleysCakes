@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'
+import { Switch, Route } from 'react-router-dom'
+import { NavBar } from './components/navbar'
+import { Home } from './pages/home'
+import { About } from './pages/about'
+import { Contact } from './pages/contact'
 
-function App() {
+const App = () => {
+const [scrollPosition, setScrollPosition] = useState(0);
+useEffect(() => {
+  document.body.style.backgroundColor = '#f3a4b5'
+  return () => document.body.style.backgroundColor = 'white'
+})
+
+const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+};
+
+useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
+      </Switch>
+      
     </div>
   );
 }
