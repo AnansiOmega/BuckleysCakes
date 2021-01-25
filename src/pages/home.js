@@ -17,16 +17,14 @@ export const Home = () => {
     return(
         <>
         <InfoCarousel />
+        {/* <div className='cupcake-cont'> */}
         <h1 className="display-1">Cakes</h1>
         <Carousel photos={photos.filter(photo => photo.tags === 'cake')}/>
-        <div className='cupcake-cont'>
         <h1 className="display-1">Cupcakes</h1>
         <Carousel photos={photos.filter(photo => photo.tags === 'cupcake')}/>
-        </div>
-        <div className='combo-cont'>
         <h1 className="display-1">Combo</h1>
         <Carousel photos={photos.filter(photo => photo.tags === 'combo')}/>
-        </div>
+        {/* </div> */}
         </>
     )
 }

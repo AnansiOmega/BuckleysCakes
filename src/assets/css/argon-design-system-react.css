@@ -17072,12 +17072,11 @@ td.rdtYear:hover {
   border-color: floralwhite;
 }
 
-/* .cupcake-cont {
-  background: rgb(17,205,239);
-  background: linear-gradient(0deg, rgba(17,205,239,1) 0%, rgba(17,205,239,0) 100%);
+.cupcake-cont {
+  background-color: white;
 }
 
-.combo-cont {
+/* .combo-cont {
   background: rgb(17,205,239);
   background: linear-gradient(0deg, rgba(17,205,239,0) 0%, rgba(17,205,239,1) 100%);
 } */
