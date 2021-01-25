@@ -68,7 +68,7 @@ export const OrderForm = () => {
                         <FormGroup>
                             <Label>Phone Number</Label>
                             <Input
-                                placeholder="+1(234) - 567 - 8910"
+                                placeholder="+1(123) - 123 - 1234"
                                 name='number'
                                 value={number}
                                 onChange={handleChange}

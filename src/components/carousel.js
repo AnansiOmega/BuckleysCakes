@@ -11,26 +11,30 @@ const responsive = {
       items: 6
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1300 },
       items: 4
     },
+    smallDesktop: {
+      breakpoint: { max: 1300, min: 1100 },
+      items: 3
+    },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1100, min: 800 },
       items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 800, min: 0 },
       items: 1
     }
   };
 
 const renderImages = () => {
     return photos.map(photo => {
-        return <img className='product-picture' src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_w.jpg`}/>
+        return <img className='product-picture rounded ml-1 mr-1 fluid' src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_w.jpg`}/>
     })
 }
 return(
-    <div className='ml-4'>
+    <div>
         <Carousel
         responsive={responsive}
         autoPlay={true}
@@ -38,7 +42,7 @@ return(
         transitionDuration={1000}
         infinite={true}
         >
-            {renderImages()}
+        {renderImages()}
         </Carousel>
     </div>
 )

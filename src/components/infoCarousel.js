@@ -49,8 +49,12 @@ export const InfoCarousel = () => {
                   Buckley's Cakes
                 </h1>
                 <p className="lead text-white mt-4">
-                  When you're in the need for a cake baked to perfection. A cake baked with love. Lauren's Cakes will deliver.
-                  We are dedicated to creating the most delicious cakes, made with with organic ingredients. 
+                First things first, thanks for being a fan!
+                This is my small business located in Lockport Il, all hand-made product, and all made with lots of love!
+                Please visit the Contact us page for ways you can get in touch. Also, please be aware, cake is serious talk, and requires a lot of communication!
+                </p>
+                <p className="text-white">
+                - Lauren (Buckley) Shepherd
                 </p>
               </Col>
               <Col className="mb-lg-auto" lg="6">

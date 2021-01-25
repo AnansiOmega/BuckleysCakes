@@ -20,7 +20,6 @@ import React from "react";
 // reactstrap components
 import { Card, Container, Row, Col } from "reactstrap";
 
-// class Profile extends React.Component {
 export const About = () => {
     return (
       <>
@@ -42,7 +41,6 @@ export const About = () => {
                 <div className="px-4">
                   <Row className="justify-content-center">
                       <div className="card-profile-image d-flex">
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
                           <img
                             alt="..."
                             className="rounded-circle"
@@ -50,7 +48,6 @@ export const About = () => {
                             width='300px'
                             height='200px'
                           />
-                        </a>
                       </div>
                     <br/>
                     <br/>
@@ -59,7 +56,7 @@ export const About = () => {
                   </Row>
                   <div className="text-center mt-5">
                     <h3>
-                      Lauren Buckley{" "}
+                    Lauren (Buckley) Shepherd{" "}
                     </h3>
                     <div className="h6 font-weight-300">
                       <i className="ni location_pin mr-2" />
@@ -69,11 +66,23 @@ export const About = () => {
                   <div className="mt-5 py-5 border-top text-center">
                     <Row className="justify-content-center">
                       <Col lg="9">
+                        <h2>About me</h2>
                         <p>
-                          I've been baking for over 15 years. I've been a baker every since I could talk.
-                          When people ask me what I want to do with my life. I always respond with 'I want to spread love.'
-                          Though I was naive, I still feel like I'm doing just that with the goods that I make.
+                        Baking cakes is something I've been doing for over 10 years. All of the cakes that I make are baked in my home, I am
+                        the head baker and the sole baker. Because of this every order that I receive gets special attention until it is complete.
+                        Drawbacks to this are that I am only able to take on a single order at a time, so please make sure to give ample time before
+                        requesting an order ( about 2 weeks in advance. )
                         </p>
+                        <div className="mt-5 py-5 border-top text-center">
+                        <h3> Why Buckleys cakes? </h3>
+                        <p>
+                          I constantly challenge myself
+                          to make every cake better than the last. I've graduated from Le Cordon Bleu College of Culinary Arts in Chicago
+                          with a degree in Baking & Patisserie. I know what it takes to create a delicious cake from scratch. If you have dietary
+                          restrictions or just simply want a cake made with specific ingredients, feel free to mention that within your order and
+                          I will see what accommodations I can make.
+                        </p>
+                        </div>
                       </Col>
                     </Row>
                   </div>
