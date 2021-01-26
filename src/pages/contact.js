@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, Container, Row, Col } from "reactstrap";
+import { Card, Container, Row, Col } from "reactstrap";
 import { OrderForm } from '../components/form'
 
 export const Contact = () => {
