@@ -45,9 +45,9 @@ export const InfoCarousel = () => {
           <Container className="py-md">
             <Row className="justify-content-between align-items-center">
               <Col className="mb-5 mb-lg-0" lg="5">
-                <h1 className="text-white font-weight-light">
+                {/* <h1 className="text-white font-weight-light hachi">
                   Buckley's Cakes
-                </h1>
+                </h1> */}
                 <p className="lead text-white mt-4">
                 First things first, thanks for being a fan!
                 This is my small business located in Lockport Il, all hand-made product, and all made with lots of love!

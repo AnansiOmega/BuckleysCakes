@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 import Headroom from "headroom.js";
 // reactstrap components
 import {
-  Button,
   UncontrolledCollapse,
-  DropdownMenu,
-  DropdownItem,
-  DropdownToggle,
-  UncontrolledDropdown,
-  Media,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -39,10 +33,11 @@ export const NavBar = () => {
           >
             <Container>
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                <img
+              <h4 className='hachi text-white'>Buckley's Cakes</h4>
+                {/* <img
                   alt="..."
                   src={require("../assets/img/brand/Ignas.png")}
-                />
+                /> */}
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -55,10 +50,11 @@ export const NavBar = () => {
                   <Row>
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
-                        <img
+                        <h4 className='hachi'>Buckley's Cakes</h4>
+                        {/* <img
                           alt="..."
                           src={require("../assets/img/brand/argon-react.png")}
-                        />
+                        /> */}
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">

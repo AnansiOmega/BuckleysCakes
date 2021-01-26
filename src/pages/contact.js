@@ -21,7 +21,7 @@ export const Contact = () => {
                   Get in Touch
                 </h1>
                 <p className="lead text-white mt-4">
-                  Our cakes are baked to order. I ask that place your order at least two weeks prior to the date of your event.
+                  The cakes are baked to order. I ask that place your order at least two weeks prior to the date of your event.
                   Keep in mind the grander the cake the more time it may take. 
                 </p>
                 </Col>
@@ -56,7 +56,8 @@ export const Contact = () => {
                     <h3 className='text-white'> Contact Information:</h3>
                     <ul>
                       <li className='text-white'> Email: BuckleysCakes@gmail.com </li>
-                      <li className='text-white'> Phone: (815) - 272 - 5792  (Text message only!)</li>
+                      <li className='text-white'> Phone: (815)-272-5792  (Text message only!)</li>
+                      <li className='text-white'> Location: Lockport, IL</li>
                     </ul>
                   </Col>
                 </Row>
