@@ -3,34 +3,47 @@ import React from "react";
 // reactstrap components
 import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 
-const items = [
-  {
-    src: require("../assets/img/pics/wedding-cake.jpeg"),
-    altText: "",
-    caption: "",
-    header: "",
-  },
-  {
-    src: require("../assets/img/pics/salted-cara-cupcake.jpeg"),
-    altText: "",
-    caption: "",
-    header: ""
-  },
-  {
-    src: require("../assets/img/pics/choco-bday-cake.jpg"),
-    altText: "",
-    caption: "",
-    header: ""
-  },
-  {
-    src: require("../assets/img/pics/rose-cupcakes.jpeg"),
-    altText: "",
-    caption: "",
-    header: ""
-  },
-];
+// const items = [
+//   {
+//     src: require("../assets/img/pics/wedding-cake.jpeg"),
+//     altText: "",
+//     caption: "",
+//     header: "",
+//   },
+//   {
+//     src: require("../assets/img/pics/salted-cara-cupcake.jpeg"),
+//     altText: "",
+//     caption: "",
+//     header: ""
+//   },
+//   {
+//     src: require("../assets/img/pics/choco-bday-cake.jpg"),
+//     altText: "",
+//     caption: "",
+//     header: ""
+//   },
+//   {
+//     src: require("../assets/img/pics/rose-cupcakes.jpeg"),
+//     altText: "",
+//     caption: "",
+//     header: ""
+//   },
+// ];
 
-export const InfoCarousel = () => {
+export const InfoCarousel = ({photos}) => {
+
+  const createItems = () => {
+    return photos.map(photo => {
+      return{
+        src: `https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_w.jpg`,
+        altText: photo.title,
+        caption: '',
+        header: ''
+      }
+    })
+  }
+
+  createItems()
     return (
       <>
         <section className="section section-shaped">
@@ -59,7 +72,7 @@ export const InfoCarousel = () => {
               </Col>
               <Col className="mb-lg-auto" lg="6">
                 <div className="rounded shadow-lg overflow-hidden transform-perspective-right">
-                  <UncontrolledCarousel items={items} />
+                  <UncontrolledCarousel items={createItems()}/>
                 </div>
               </Col>
             </Row>

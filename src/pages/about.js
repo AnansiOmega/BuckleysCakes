@@ -43,10 +43,8 @@ export const About = () => {
                       <div className="card-profile-image d-flex">
                           <img
                             alt="..."
-                            className="rounded-circle"
-                            src={require("../assets/img/pics/20181224_113217.jpg")}
-                            width='300px'
-                            height='200px'
+                            className="rounded"
+                            src={require("../assets/img/pics/laurensSelfie.jpg")}
                           />
                       </div>
                     <br/>

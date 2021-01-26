@@ -16,7 +16,7 @@ export const Home = () => {
 
     return(
         <>
-        <InfoCarousel />
+        <InfoCarousel photos={photos.filter(photo => photo.tags === 'cover')}/>
         <section className="section section-shaped">
           <div className="shape shape-style-1 shape-inverse">
             <span />
