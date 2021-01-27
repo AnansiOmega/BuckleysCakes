@@ -29,7 +29,7 @@ const responsive = {
 
 const renderImages = () => {
     return photos.map(photo => {
-        return <img className='product-picture rounded ml-1 mr-1 fluid' src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_w.jpg`}/>
+        return <img key={photo.id} className='product-picture rounded ml-2 mr-2 fluid' src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_w.jpg`} alt={photo.title}/>
     })
 }
 return(
