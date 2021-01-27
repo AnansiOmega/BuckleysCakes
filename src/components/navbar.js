@@ -30,8 +30,7 @@ import {
   Nav,
   Container,
   Row,
-  Col,
-  UncontrolledTooltip
+  Col
 } from "reactstrap";
 
 export const NavBar = () => {
