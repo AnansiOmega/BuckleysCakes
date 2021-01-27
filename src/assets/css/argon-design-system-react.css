@@ -8857,12 +8857,14 @@ p {
   box-shadow: 0 1px 10px rgba(130, 130, 134, 0.1); }
 
 .product-picture {
-  border-style: solid;
-  border-width: thick;
-  max-width: 20rem;
-  border-width: 3px;
+  /* border-style: solid; */
+  /* border-width: thick; */
+  width: inherit;
   height: auto;
-  border-color: floralwhite;
+  border-radius: 10%;
+  /* border-width: 3px; */
+  /* border-color: floralwhite; */
+  padding:10px
 }
 
 .match-text {
@@ -8872,6 +8874,9 @@ p {
   line-height: 1.5 !important;
 }
 
+/* li.react-multi-carousel-item {
+  margin: auto;
+} */
 
 
 /*# sourceMappingURL=argon-design-system-react.css.map */
