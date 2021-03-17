@@ -55,8 +55,8 @@ export const NavBar = () => {
                   src={require("../assets/img/brand/Ignas.png")}
                 /> */}
               </NavbarBrand>
-              <button className="navbar-toggler" id="navbar_global">
-                <span className="navbar-toggler-icon" />
+              <button aria-label='open navbar button' className="navbar-toggler" id="navbar_global">
+                <span aria-label='open navbar button' className="navbar-toggler-icon" />
               </button>
               <UncontrolledCollapse
                 toggler="#navbar_global"

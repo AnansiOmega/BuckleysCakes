@@ -61,7 +61,7 @@ export const InfoCarousel = ({photos}) => {
                 </p>
               </Col>
               <Col className="mb-lg-auto" lg="6">
-                <div className="rounded shadow-lg overflow-hidden transform-perspective-right">
+                <div id='uncontrolled-carousel' className="rounded shadow-lg overflow-hidden transform-perspective-right">
                   <UncontrolledCarousel items={createItems()}/>
                 </div>
               </Col>
