@@ -42,7 +42,7 @@ export const About = () => {
                   <Row className="justify-content-center">
                       <div className="card-profile-image d-flex">
                           <img
-                            alt="Profile Picture"
+                            alt="selfie"
                             className="rounded"
                             src={require("../assets/img/pics/laurensSelfie.jpg")}
                           />
